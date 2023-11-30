@@ -52,3 +52,7 @@ group :development do
   gem "bundler-audit", require: false
 end
 
+group :test do
+  gem 'shoulda-matchers', '~> 5.0'
+end
+

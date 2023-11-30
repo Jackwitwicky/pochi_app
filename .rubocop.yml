@@ -133,5 +133,8 @@ Lint/AssignmentInCondition:
 Layout/LineLength:
   Enabled: false
 
+Lint/EmptyBlock:
+  Enabled: false
+
 Metrics:
   Enabled: false

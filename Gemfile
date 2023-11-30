@@ -41,10 +41,14 @@ group :development, :test do
   gem "rspec-rails"
   gem "factory_bot_rails"
   gem "faker"
+  gem "rubocop"
+  gem 'rubocop-rails', require: false
+  gem 'rubocop-rspec', require: false
 end
 
 group :development do
-  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
-  # gem "spring"
+  # security audits during ci/cd
+  gem "brakeman", require: false
+  gem "bundler-audit", require: false
 end
 

@@ -5,7 +5,7 @@ require 'rails_helper'
 RSpec.describe "Users" do
   describe "create" do
     subject(:make_request) do
-      post users_path, params:
+      post api_v1_users_path, params:
     end
 
     let(:params) {}

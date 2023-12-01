@@ -7,7 +7,7 @@ class ApiResponse
 
   attr_accessor :message, :data, :errors
 
-  def initialize(message:, data: nil, errors: nil)
+  def initialize(message: nil, data: nil, errors: nil)
     @message = message
     @data = data
     @errors = errors

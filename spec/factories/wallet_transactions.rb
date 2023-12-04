@@ -3,7 +3,7 @@
 FactoryBot.define do
   factory :wallet_transaction do
     amount { "9.99" }
-    type { "credit" }
-    user { nil }
+    transaction_type { "credit" }
+    user
   end
 end

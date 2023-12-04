@@ -16,6 +16,7 @@ Rails.application.routes.draw do
       post :auth, to: 'authentication#create'
       post :top_up, to: 'wallet_transactions#create'
       post :transfer, to: 'fund_transfers#create'
+      post :report, to: 'transaction_reports#create'
     end
   end
 end

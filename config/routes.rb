@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :users
+      resources :notifications, only: [:index, :show]
 
       post :auth, to: 'authentication#create'
       post :top_up, to: 'wallet_transactions#create'

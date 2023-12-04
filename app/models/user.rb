@@ -11,6 +11,7 @@ class User < ApplicationRecord
   # to prevent loss of data
   has_many :wallet_transactions, dependent: :destroy
   has_many :fund_transfers, dependent: :destroy
+  has_many :notifications, dependent: :destroy
 
   def wallet
     Wallet.new(user_id: id)

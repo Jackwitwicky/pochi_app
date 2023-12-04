@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<p>Hi <%= @user.name %></p>
+<p>Here is a report of your transactions in Pochi App</p>
+<h3>
+  Report details<br>
+</h3>
+<table>
+  <tr>
+    <th>Amount</th>
+    <th>Transaction Type</th>
+    <th>Transaction Date</th>
+  </tr>
+
+  <% @transactions.each do |transaction| %>
+    <tr>
+      <td><%= transaction.amount %></td>
+      <td><%= transaction.transaction_type %></td>
+      <td><%= transaction.created_at %></td>
+    </tr>
+  <% end %>
+</table>
+</body>
+</html>

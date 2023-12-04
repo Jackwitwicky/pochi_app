@@ -10,4 +10,9 @@ class User < ApplicationRecord
   # a better approach would be to soft delete this
   # to prevent loss of data
   has_many :wallet_transactions, dependent: :destroy
+  has_many :fund_transfers, dependent: :destroy
+
+  def wallet
+    Wallet.new(user_id: id)
+  end
 end

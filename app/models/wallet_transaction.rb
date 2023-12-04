@@ -5,8 +5,7 @@ class WalletTransaction < ApplicationRecord
 
   validates :amount, presence: true
   validates :transaction_type, presence: true
-  validates :amount, numericality: { only_integer: true,
-                                     greater_than_or_equal_to: 5 }
+  validates :amount, numericality: { greater_than_or_equal_to: 5 }
 
   enum transaction_type: {
     credit: 0,

@@ -13,8 +13,8 @@ Rails.application.routes.draw do
       resources :users
 
       post :auth, to: 'authentication#create'
-
       post :top_up, to: 'wallet_transactions#create'
+      post :transfer, to: 'fund_transfers#create'
     end
   end
 end

@@ -7,9 +7,9 @@ class Api::V1::FundTransfersController < ApplicationController
       return
     end
 
-    transfer_response = TransferFundsService.call(sender_id: current_user.id,
-                                                  recipient_id: recipient.id,
-                                                  amount: fund_transfer_params[:amount])
+    transfer_response = TransferService.call(sender_id: current_user.id,
+                                             recipient_id: recipient.id,
+                                             amount: fund_transfer_params[:amount])
 
     if transfer_response.success?
       render json: ApiResponse.render(message: 'Funds have been transferred successfully', data: transfer_response.data)

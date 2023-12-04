@@ -4,7 +4,7 @@ class TransferFundsService < ApplicationService
   def initialize(sender_id:, recipient_id:, amount:)
     @sender_id = sender_id
     @recipient_id = recipient_id
-    @amount = amount.to_d
+    @amount = amount
     super()
   end
 

@@ -3,8 +3,9 @@
 
 ## Description
 
-Welcome to Pochi App. This is my submission for the Quikk technical interview challenge
-Pochi App is an API based web app built on Ruby on Rails that allows a user to sign up
+Welcome to Pochi App!
+
+Pochi App is an API based sample web app built on Ruby on Rails that allows a user to sign up
 and make subsequent requests through an authenticated API token to top up their wallet
 and transfer funds to other users on the platform.
 They can also request for a transaction report which will be sent to their email.
@@ -25,10 +26,6 @@ They can also request for a transaction report which will be sent to their email
 ## Local testing
 
 - You can run the application by using the command `bin/rails s`.
-
-## Production testing
-
-The Pochi app is hosted on heroku [here](https://pochi-app-728bd426f8a4.herokuapp.com/)
 
 ## Postman documentation
 
